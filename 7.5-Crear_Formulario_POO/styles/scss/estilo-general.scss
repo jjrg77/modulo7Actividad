@@ -1,0 +1,60 @@
+$colorFont: #EA2027;
+$colorback: #3498db;
+$colorBut: #0652DD;
+$colorLine: #FFFFFF;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100vh;
+}
+
+.container {
+    .showMessages {
+        width: 100%;
+        height: 5rem;
+        max-width: 1000px;
+        
+        padding-left: 100px;
+    }
+    .aplicacion {
+        .card {
+            box-shadow: 0px 10px 10px black;
+            .card-header{
+                background: linear-gradient(180deg, white, $colorback);
+                h5 {
+                    color: $colorFont;
+                    text-decoration-line: underline;
+                    -moz-text-decoration-line: underline;
+                }
+            }
+            .card-body {
+                input {
+                    cursor: text;
+                    box-shadow: 5px 5px 5px black;
+                }
+                background: linear-gradient(0deg, white, $colorback);
+                .btn-1 {
+                    color: $colorFont;
+                    background: linear-gradient(to bottom, white, $colorBut);
+                    &:hover {
+                        background: linear-gradient(0deg, white, $colorback);
+                        color:$colorBut;
+                    }
+                }
+            }
+        }
+    }
+    hr {
+        background: $colorLine;
+    }
+    .i {
+        color: $colorFont;
+        margin-top: 25px;
+    }
+}
+

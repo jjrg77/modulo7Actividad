@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;   
+}
+
+.container {
+    width: 20%;
+    height: 2.5rem;
+     padding: 20px 30px;
+     border-radius: 5px;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     -ms-border-radius: 5px;
+     -o-border-radius: 5px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     .star {
+        color: #3498db;
+         display: flex;
+         flex-direction: row-reverse;
+         .input {
+            display: none;
+            &:not(checked) ~ label:hover {
+                color: #fd4;
+            }
+            &:not(checked) ~ label:hover ~ label {
+                color: #fd4;
+            }
+            &:checked ~ label {
+                color: #fd4;
+            }
+         }
+         i {
+            padding: 10px;
+            font-size: 2rem;
+            float: left;
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+        }
+    }
+
+    .starIni {
+        color: #3498db;
+         display: flex;
+         flex-direction: row-reverse;
+         .input {
+            display: none;
+            &:not(checked) ~ label:hover {
+                color: #3498db;
+            }
+            &:not(checked) ~ label:hover ~ label {
+                color: #3498db;
+            }
+            &:checked ~ label {
+                color: #3498db;
+            }
+         }
+         i {
+            padding: 10px;
+            font-size: 2rem;;
+            float: left;
+            transition: all 0.2s ease;
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            -ms-transition: all 0.2s ease;
+            -o-transition: all 0.2s ease;
+        }
+    }
+}
+
+
+
+
